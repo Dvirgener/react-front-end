@@ -13,7 +13,6 @@ export default function Posts() {
 
         .then((data) => {
             setPosts(data.posts)
-            console.log(data)
     });
     }, []);
 
