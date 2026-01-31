@@ -12,6 +12,9 @@ export default function Post({post}){
     <div>
         <span>Date Posted: {post.created_at}</span>
     </div>
+        <div>
+        <span>Posted by: {post.user.name}</span>
+    </div>
     <div className="justify-end card-actions">
       <button className="btn btn-primary">Edit</button>
       <button className="btn btn-secondary">Delete</button>

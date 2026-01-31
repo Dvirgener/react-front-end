@@ -13,6 +13,7 @@ export default function Posts() {
         .then((data) => {
             setPosts(data.posts)
     });
+
     }, []);
 
     return(
