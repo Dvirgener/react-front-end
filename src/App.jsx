@@ -3,14 +3,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Posts from './components/Posts'
+import CreatePost from './components/CreatePost'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+
+    <div className='p-5 mx-auto w-full'>
+      <div className='w-full mb-5'>
+        <CreatePost/>
+      </div>
       <Posts/>
-    </>
+    </div>
+
   )
 }
 

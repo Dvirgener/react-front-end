@@ -10,7 +10,6 @@ export default function Posts() {
     useEffect(() => {
         fetch("http://my-react-backend-api.test/api/v1/posts")
         .then((response) => response.json())
-
         .then((data) => {
             setPosts(data.posts)
     });
@@ -18,7 +17,7 @@ export default function Posts() {
 
     return(
         <>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 h-120 overflow-auto pe-5">
         {posts.map((post) => (
                 <Post key={post.id} post={post}/>
         ))}
