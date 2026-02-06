@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const formSlice = createSlice({
     name: 'toggle-form',
-    initialState:{'isVisible': false},
+    initialState:{'isVisible': true},
     reducers: {
         toggleForm(state){
             state.isVisible = !state.isVisible;

@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import postSlice from './postSlice';
+import postSlice from './post-slice';
 import formSlice from "./form-slice";
 
 const store = configureStore({
@@ -8,5 +8,6 @@ const store = configureStore({
         'formVisible': formSlice.reducer
     }
 });
+
 
 export default store;
